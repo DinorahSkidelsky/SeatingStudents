@@ -1,11 +1,11 @@
 def SeatingStudents(arr)
-  totalSeats = arr[0]
-  # totalSeats = [12]
+  allSeats = arr[0]
+  # allSeats = [12]
 
   arr.delete_at(0)
   # arr = [2, 6, 7]
 
-  availableSeats = (1..totalSeats).to_a
+  availableSeats = (1..allSeats).to_a
   # availableSeats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
   arr.each do |x|
@@ -33,4 +33,5 @@ def SeatingStudents(arr)
   return "Possible combinations: #{counter}"
 end
 
-puts SeatingStudents([12, 2, 6, 7])
+array1 = [12, 2, 6, 7]
+puts SeatingStudents(array1) # output should be 8
