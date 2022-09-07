@@ -2,7 +2,7 @@ def SeatingStudents(arr)
   allSeats = arr[0]
   # allSeats = [12]
 
-  arr.delete_at(0)
+  arr.delete_at(0) # 12
   # arr = [2, 6, 7]
 
   availableSeats = (1..allSeats).to_a
